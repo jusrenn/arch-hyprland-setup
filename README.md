@@ -1,6 +1,6 @@
-# Arch Hyprland Kurulum Scripti
+# Archlinux + Hyprland Kurulum Scripti
 
-Bu script, Lenovo ThinkBook laptoplarlarda Arch Linux'un minimal kurulumundan sonra kullanıcının Hyprland tabanlı, GNOME uyumlu, tam teşekküllü bir masaüstü ortamına hızla geçiş yapabilmesi için hazırlanmıştır. Kullanım kolaylığı, donanım desteği ve sistem kararlılığı göz önünde bulundurularak yapılandırılmıştır.
+Bu script, Lenovo ThinkBook laptoplarda Arch Linux'un minimal kurulumundan sonra kullanıcının Hyprland tabanlı, GNOME uyumlu, tam teşekküllü bir masaüstü ortamına hızla geçiş yapabilmesi için hazırlanmıştır. Kullanım kolaylığı, donanım desteği ve sistem kararlılığı göz önünde bulundurularak yapılandırılmıştır.
 
 ## ✈ Amaç
 - Wayland tabanlı Hyprland pencere yöneticisi ile modern bir masaüstü
