@@ -87,5 +87,6 @@ flatpak install -y flathub com.gluonhq.SceneBuilder
 flatpak install -y flathub de.haeckerfelix.Shortwave
 flatpak install -y flathub io.github.yuki_iptv.yuki-iptv
 flatpak install -y flathub org.fedoraproject.MediaWriter
+flatpak install -y flathub com.obsproject.Studio
 
 echo "=== ✅ Kurulum tamamlandı. Lütfen sistemi yeniden başlatın. ==="
