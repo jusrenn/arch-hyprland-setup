@@ -30,4 +30,4 @@ Script’i indirip çalıştır:
 
 ```bash
 chmod +x install.sh
-./modern-arch-setup.sh
+./install.sh
