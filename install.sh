@@ -61,4 +61,7 @@ chsh -s $(which zsh)
 echo ">> Kullanıcı dizinleri oluşturuluyor..."
 xdg-user-dirs-update
 
+echo ">> Ses yapılandırılıyor..."
+echo "options snd-intel-dspcfg dsp_driver=1" | sudo tee /etc/modprobe.d/alsa-legacy.conf
+
 echo "✅ Sistem eksiksiz kuruldu. Yeniden başlatıp SDDM üzerinden Hyprland oturumuna geçebilirsin."
