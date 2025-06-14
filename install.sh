@@ -1,8 +1,21 @@
 #!/bin/bash
 set -e
 
-echo "=== [0] NetworkManager servisi etkinleştiriliyor... ==="
+echo "=== NetworkManager servisi etkinleştiriliyor... ==="
 sudo systemctl enable --now NetworkManager.service
+
+echo "=== Wi-Fi bağlantısı yapılandırılıyor... ==="
+read -rp "Wi-Fi ağı adı (SSID): " WIFI_SSID
+read -srp "Wi-Fi parolası: " WIFI_PASSWORD
+echo
+
+echo ">> Ağ bağlantısı kuruluyor..."
+if nmcli device wifi connect "$WIFI_SSID" password "$WIFI_PASSWORD"; then
+    echo "✅ Wi-Fi bağlantısı başarılı."
+else
+    echo "❌ Wi-Fi bağlantısı kurulamadı. Script durduruluyor."
+    exit 1
+fi
 
 echo ">> Sistem güncelleniyor..."
 sudo pacman -Syu --noconfirm
